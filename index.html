@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Gorjetas</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="container">
+        <img src="./img/logo.svg" alt="">
+        <div class="content">
+            <section id="entradas">
+                <label for="">Conta</label>
+                <input type="text" class="inputs" id="conta">
+                <label for="">Selecione %</label>
+                <div class="porcentos">
+                    <button class="btn-prc" id="">5%</button>
+                    <button class="btn-prc" id="">10%</button>
+                    <button class="btn-prc" id="">15%</button>
+                    <button class="btn-prc" id="">25%</button>
+                    <button class="btn-prc" id="">50%</button>
+                    <button class="btn-prc" id="">Custom</button>
+                </div>
+
+                <label for="">Número de pessoas</label>
+                <input type="text" class="inputs" id="pessoas">
+            </section>
+
+            <section id="saidas">
+                <div class="infoValor">
+                    <div class="infos">
+                        <label for="">Valor Gorjeta</label>
+                        <p>/ Pessoa</p>
+                    </div>
+                    <div class="valor">
+                        <label for="">R$</label><label for="">4.26</label>
+                    </div>
+                </div>
+                
+                <div class="infoValor" id="valorPessoa">
+                    <div class="infos">
+                        <label for="">Total</label>
+                        <p>/ Pessoa</p>
+                    </div>
+                    <div class="valor">
+                        <label for="">R$</label><label for="">4.26</label>
+                    </div>
+                </div>
+
+                <button class="btn-reset">REFAZER</button>
+
+            </section>
+        </div>
+    </div>
     
+    <script src="index.js"></script>
 </body>
 </html>
