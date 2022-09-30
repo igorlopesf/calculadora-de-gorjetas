@@ -143,3 +143,9 @@
     color: var(--very_dark_cyan);
     border-style: none;
 }
+
+.active {
+    background:var(--strong_cyan);
+    color: var(--very_dark_cyan);
+    transition: all ease 0.5s;
+  }
