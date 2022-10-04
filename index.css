@@ -8,6 +8,7 @@
   --very_light_grayish_cyan: hsl(189, 41%, 97%);
   --white: hsl(0, 0%, 100%);
   --strong_cyan: hsl(172, 67%, 45%);
+  --redErro: hsl(0, 100%, 66%);
 }
 
 * {
@@ -38,7 +39,6 @@
     background-color: var(--white);
     padding: 30px;
     border-radius: 20px;
-    background-color: var(--white);
 }
 
 #entradas{
@@ -47,11 +47,9 @@
     justify-content: space-between;
     width: 350px;
     height: 325px;
-}
-
-#entradas label{
     color: var(--grayish_cyan);
 }
+
 
 #entradas input{
     background-color:  var(--very_light_grayish_cyan);
@@ -149,3 +147,9 @@
     color: var(--very_dark_cyan);
     transition: all ease 0.5s;
   }
+
+#erroLabel{
+    font-size: 11px;
+    color: var(--redErro);
+    display: none;
+}
