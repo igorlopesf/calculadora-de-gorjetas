@@ -54,16 +54,13 @@
 #entradas input{
     background-color:  var(--very_light_grayish_cyan);
     height: 35px;
-    border-radius: 8px;
+    border-radius: 5px;
     text-align: end;
     padding: 0px 10px ;
-    width: 320px;
+    width: 325px;
     margin: 0 auto;
     border-style: none;
     color: var(--very_dark_cyan);
-}
-
-#entradas input:focus{
     outline: 2px solid var(--strong_cyan);
 }
 
@@ -148,8 +145,12 @@
     transition: all ease 0.5s;
   }
 
-#erroLabel{
+.erroLabel{
     font-size: 11px;
     color: var(--redErro);
     display: none;
+}
+
+.invalido{
+    outline: 2px solid var(--redErro);
 }
