@@ -31,6 +31,18 @@
     margin-bottom: 80px;
 }
 
+@media only screen and (max-width: 400px) {
+    .container{
+        height: auto;
+    }   
+}
+@media only screen and (max-width: 400px) {
+    .container img{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }   
+}
+
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +53,12 @@
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 400px) {
+    .content{
+        max-width: 295px;
+    }   
+}
+
 #entradas{
     display: flex;
     flex-direction: column;
@@ -49,6 +67,12 @@
     height: 325px;
     color: var(--grayish_cyan);
 }
+
+@media only screen and (max-width: 400px) {
+    #entradas {
+        height: 370px;
+    }   
+} 
 
 
 #entradas input{
@@ -63,6 +87,12 @@
     color: var(--very_dark_cyan);
     outline: 2px solid var(--strong_cyan);
 }
+
+@media only screen and (max-width: 400px) {
+    #entradas input{
+        max-width: 270px;
+    }   
+} 
 
 #conta{
     background: url("./img/icon-dollar.svg") no-repeat left;
@@ -81,6 +111,13 @@
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 400px) {
+    .porcentos{
+        justify-content: space-evenly;
+    }   
+}
+
+
 .btn-prc{
     width: 105px;
     height: 50px;
@@ -90,6 +127,12 @@
     color: var(--white);
     font-size: 22px;
     border-style: none;
+}
+
+@media only screen and (max-width: 400px) {
+    .btn-prc{
+        width: 140px ;
+    }   
 }
 
 #saidas{
@@ -102,6 +145,15 @@
     margin-left: 35px;
     background-color: var(--very_dark_cyan);
 }
+
+@media only screen and (max-width: 400px) {
+    #saidas{
+        margin-left: 0px;
+        margin-top: 35px;
+        height: 200px;
+    }   
+}
+
 
 .infoValor{
     display: flex;
@@ -139,6 +191,13 @@
     border-style: none;
 }
 
+@media only screen and (max-width: 400px) {
+    #saidas button{
+        margin-top: 50px;
+    }   
+}
+
+
 .active {
     background:var(--strong_cyan);
     color: var(--very_dark_cyan);
@@ -154,3 +213,4 @@
 .invalido{
     outline: 2px solid var(--redErro);
 }
+
